@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tabelas completas</title>
+    <style>
+     
+     body {background-color: #514c4c6c;}
+     
+     
+     table,
+      td,
+      th {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        background-color: rgb(135, 188, 241);
+      }
+      th {
+        padding: 5px;
+      }
+.titulo { background-color: rgb(230, 25, 32);}
+
+.final {background-color: aquamarine;}
+
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        titulo da tabelas
+      </caption>
+
+      <thead>
+        <tr>
+          <th class="titulo">mês</th>
+          <th class="titulo">serviço</th>
+          <th class="titulo">valor</th> 
+          <th class="titulo">pessoas</th>
+        </tr>
+
+        
+        </tr>
+    </thead>
+      <tbody>
+        <tr>
+          <td>abril</td>
+          <td>exames</td>
+          <td>R$27,000</td>
+          <td>7</td>
+
+        </tr>
+
+        <tr>
+          <td rowspan="2">maio</td>
+          <td>desenvolvedor</td>
+          <td>R$8,475</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>suporte</td>
+          <td>R$4000</td>
+          <td>6</td>
+        </tr>
+
+        <tr>
+            <td> junho</td>
+            <td>front-end</td>
+            <td>R$6,000</td>
+<td>8</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <th colspan="2" class="final">valor total</th>
+        <td class="final">R$46,475</td>
+        <td class="final">26</td>
+    </tfoot>
+     
+    </table>
+  </body>
+</html>
