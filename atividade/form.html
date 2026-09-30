@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="site de atividade" />
+    <title>formulario d cadastro</title>
+  </head>
+  <body
+    style="
+      background-color: #471212;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    "
+  >
+    <div
+      style="
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 30px;
+        border: 1px solid #f2f1f1;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+      "
+    >
+      <h1 style="text-align: center; color: #333">formulario de cadastro</h1>
+
+      <form action="#" method="POST">
+        <label for="nome" style="display: block; margin-top: 15px; color: #555"
+          >nome:</label
+        >
+        <input
+          type="text"
+          id="nome"
+          name="nome"
+          placeholder="Digite seu nome"
+          required
+          style="
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          "
+        />
+
+        <label for="email" style="display: block; margin-top: 15px; color: #555"
+          >e mail:</label
+        >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Digite seu e-mail"
+          required
+          style="
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          "
+        />
+
+        <label for="idade" style="display: block; margin-top: 15px; color: #555"
+          >Idade:</label
+        >
+        <input
+          type="number"
+          id="idade"
+          name="idade"
+          min="1"
+          max="120"
+          placeholder="Digite sua idade"
+          required
+          style="
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          "
+        />
+
+        <label
+          for="regiao"
+          style="display: block; margin-top: 15px; color: #555"
+          >Regiao:</label
+        >
+        <select
+          id="regiao"
+          name="regiao"
+          required
+          style="
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            background-color: #fff;
+          "
+        >
+          <option value="" disabled selected>selecione sua regiao</option>
+          <option value="norte">norte</option>
+          <option value="nordeste">nordeste</option>
+          <option value="centro-oeste">centro oeste</option>
+          <option value="sudeste">sudeste</option>
+          <option value="sul">sul</option>
+        </select>
+
+        <label
+          for="mensagem"
+          style="display: block; margin-top: 15px; color: #555"
+          >Mensagem:</label
+        >
+        <textarea
+          id="mensagem"
+          name="mensagem"
+          rows="4"
+          placeholder="escreva sua mensagen"
+          required
+          style="
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          "
+        ></textarea>
+
+        <label
+          style="
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            color: #555;
+            cursor: pointer;
+          "
+        >
+          <input
+            type="checkbox"
+            name="termos"
+            required
+            style="
+              margin-right: 8px;
+              width: 18px;
+              height: 18px;
+              cursor: pointer;
+            "
+          />
+          aceito os termos e condições
+        </label>
+
+        <button
+          type="submit"
+          style="width: 100%; padding: 12px; margin-top: 20px; none; border-radius: 4px; font-size: 16px; cursor: pointer;"
+        >
+          emviar
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
