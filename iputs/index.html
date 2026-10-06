@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulario</title>
+  </head>
+  <body>
+    <form>
+      <label for="nome">nome:</label>
+      <input
+        type="text"
+        name="nome"
+        id="nome"
+        placeholder="seu nome"
+        required
+      />
+      <br />
+
+      <label for="">idade</label>
+      <input type="number" name="idade" id="idade" min="0" max="100" required />
+      <br />
+
+      <label for="">email</label>
+      <input type="email" name="imail" id="imail" required /> <br />
+
+      <label for="">senha</label>
+      <input
+        type="password"
+        name="senha"
+        id="senha"
+        required
+        minlength="4"
+        maxlength="10"
+      />
+
+      <p>
+        <input type="submit" value="enviar" />
+        <input type="reset" value="limpar" />
+      </p>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Texto com Gradiente</title>
+    <style>
+      .texto-degrade {
+        /* Define as cores do gradiente */
+        background: linear-gradient(90deg, #ff007f, #7f00ff, #00d4ff);
+
+        /* Aplica o fundo apenas onde há texto */
+        -webkit-background-clip: text;
+        background-clip: text;
+
+        /* Torna a cor original do texto transparente para mostrar o gradiente */
+        color: transparent;
+
+        font-size: 32px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="texto-degrade">texte de html ;]</h1>
+  </body>
+</html>
